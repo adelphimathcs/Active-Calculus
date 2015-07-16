@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  16 JUL 2015 11:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  16 JUL 2015 11:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -105,7 +105,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 \thm@headsep=\skip50
 \dth@everypar=\toks24
 )
-(./main-test.aux)
+(./main-test.aux (./include-test.tex.aux))
 \openout1 = `main-test.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
@@ -129,26 +129,34 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 3.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-(./input-test.tex) [1{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap
-/pdftex.map}] (./main-test.aux) ) 
+) [1{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+\openout2 = `include-test.tex.aux'.
+
+
+No file include-test.tex.tex.
+(./input-test.tex) [2
+
+
+] (./main-test.aux (./include-test.tex.aux)) ) 
 Here is how much of TeX's memory you used:
- 1371 strings out of 493117
- 15307 string characters out of 6135433
+ 1382 strings out of 493117
+ 15475 string characters out of 6135433
  67496 words of memory out of 5000000
- 4716 multiletter control sequences out of 15000+600000
- 8439 words of font info for 34 fonts, out of 8000000 for 9000
+ 4720 multiletter control sequences out of 15000+600000
+ 9048 words of font info for 36 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 34i,4n,28p,256b,164s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr7.pfb>
-Output written on main-test.pdf (1 page, 38223 bytes).
+ 34i,5n,31p,256b,166s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2014/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr7.pfb>
+Output written on main-test.pdf (2 pages, 58193 bytes).
 PDF statistics:
- 24 PDF objects out of 1000 (max. 8388607)
- 16 compressed objects within 1 object stream
+ 35 PDF objects out of 1000 (max. 8388607)
+ 24 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1437059545 "main-test.tex" "main-test.pdf" "main-test" 1437059546
+["pdflatex"] 1437060705 "main-test.tex" "main-test.pdf" "main-test" 1437060706
   "/usr/local/texlive/2014/texmf-dist/tex/latex/amscls/amsart.cls" 1248114418 61068 95063d327b97e96350372631fd99a8c8 ""
   "/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/amsfonts.sty" 1359763108 5949 3f3fd50a8cc94c3d4cbf4fc66cd3df1c ""
   "/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd" 1359763108 961 6518c6525a34feb5e8250ffa91731cff ""
@@ -9,10 +9,13 @@
   "/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsmath.sty" 1362954379 79178 b2e326c351e876df0e5e23df2e02441b ""
   "/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsopn.sty" 1362954379 4082 502152465aedb8f6a3c4b0b7c0fa8ae5 ""
   "/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amstext.sty" 1362954379 2637 846ebe982d3549c7ede7ce135456f54a ""
-  "input-test.tex" 1437059543 28 6902c56ddd76fd0348cf24781ed104eb ""
-  "main-test.aux" 1437059546 144 c89edc3eb28a976f62dfba342f53289c ""
-  "main-test.tex" 1437059527 203 35c8d8dc48f716e189295b936dad1292 ""
+  "include-test.tex.aux" 1437060706 462 1ae2f310a950d516c5707e48c66d5234 ""
+  "include-test.tex.tex" 0 -1 0 ""
+  "input-test.tex" 1437060653 41 67147e32130ef5cf3dfc1cbb5e57c804 ""
+  "main-test.aux" 1437060706 366 3d599751708d00d9e6acb1678dd72bf3 ""
+  "main-test.tex" 1437060701 214 117188f63ce8e79762d204112bfdebf7 ""
   (generated)
   "main-test.log"
   "main-test.pdf"
+  "include-test.tex.aux"
   "main-test.aux"
