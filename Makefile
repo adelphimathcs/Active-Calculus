@@ -42,3 +42,6 @@ mobi: epub
 clean:
 	rm -f $(BOOK_FILE_NAME).pdf
 	rm -rf $(TEMP_DIR)
+
+tex_input: 
+	cat book/4.1.VelocityDistance.tex | tools/use_tex_input.rb > branden-test/ruby-test.tex
