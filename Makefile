@@ -43,5 +43,16 @@ clean:
 	rm -f $(BOOK_FILE_NAME).pdf
 	rm -rf $(TEMP_DIR)
 
-tex_input: 
-	cat book/4.1.VelocityDistance.tex | tools/use_tex_input.rb > branden-test/ruby-test.tex
+format_section: 
+	cat book/4.1.VelocityDistance.tex | tools/format_section_tex.rb > branden-test/ruby-test.tex
+
+format_activities:
+	cat book/activities/4.1.Act1.tex | tools/format_activities_tex.rb > _includes/activities/test.md
+
+format_previews:
+	cat book/4.1.VelocityDistance.tex | tools/format_section_tex.rb > branden-test/ruby-test.tex	
+
+format_exercises:
+	cat book/4.1.VelocityDistance.tex | tools/format_section_tex.rb > branden-test/ruby-test.tex	
+
+
