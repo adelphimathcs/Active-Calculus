@@ -3,6 +3,7 @@
 # print all the lines in every file passed via command line that contains login
 sep_count = 0
 ARGF.each do |line|
+#  next if line =~ /\%/ # I want to skip commented lines
 
   # includes input files
   if line =~ /\\input\{(.*)\}/

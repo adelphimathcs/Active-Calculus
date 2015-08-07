@@ -18,12 +18,12 @@ ARGF.each do |line|
 #  end  
 
   # Creates Motivating Question environment
-  if line =~ /\\framebox\{\\hspace\*\{3 pt\}/ 
-    line.gsub!(line, "\\{\\% include motivating-quest-top.md \\%\\}" )
-  end
-  if line =~ /\\end\{goals\}\} \\hspace\*\{3 pt\}\}/
-    line.gsub!(line, "\\end{itemize}\n\\{\\% include motivating-quest-bot.md \\%\\}" )    
-  end
+#  if line =~ /\\framebox\{\\hspace\*\{3 pt\}/ 
+#    line.gsub!(line, "\\{\\% include motivating-quest-top.md \\%\\}" )
+#  end
+#  if line =~ /\\end\{goals\}\} \\hspace\*\{3 pt\}\}/
+#    line.gsub!(line, "\\end{itemize}\n\\{\\% include motivating-quest-bot.md \\%\\}" )    
+#  end
 
   # Creates itemize environment
   if line =~ /\\parbox\{\\boxwidth\}\{\\begin\{goals\}/
