@@ -55,11 +55,12 @@ format_activities:
 	pandoc -f latex -t markdown  _includes/activities/4.1.Act3.md -o _includes/activities/4.1.Act3.md 	
 
 format_previews:
-	cat book/4.1.VelocityDistance.tex | tools/format_section_tex.rb > branden-test/ruby-test.tex	
+	cat book/previews/4.1.PA1.tex | tools/format_previews_tex.rb > _includes/previews/4.1.PA1.md
+	pandoc -f latex -t markdown  _includes/previews/4.1.PA1.md -o _includes/previews/4.1.PA1.md 		
 
 format_exercises: 
-	cat book/exercises/4.1.VelocityDistance(Ex).tex | tools/format_exercises_tex.rb > _includes/exercises/4.1.VelocityDistance(Ex).md
-	pandoc -f latex -t markdown  _includes/exercises/4.1.VelocityDistance(Ex).md -o _includes/exercises/4.1.VelocityDistance(Ex).md
+	cat book/exercises/4.1.VelocityDistanceEx.tex | tools/format_exercises_tex.rb > _includes/exercises/4.1.VelocityDistanceEx.md
+	pandoc -f latex -t markdown  _includes/exercises/4.1.VelocityDistanceEx.md -o _includes/exercises/4.1.VelocityDistanceEx.md
 
 
 
