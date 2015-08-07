@@ -49,19 +49,19 @@ format_section:
 
 format_activities:
 	cat book/activities/4.1.Act1.tex | tools/format_activities_tex.rb > _includes/activities/4.1.Act1.md
-	pandoc -f latex -t markdown  _includes/activities/4.1.Act1.md -o _includes/activities/4.1.Act1.md 
+	pandoc --template _layouts/activities.md -f latex -t markdown  _includes/activities/4.1.Act1.md -o _includes/activities/4.1.Act1.md 
 	cat book/activities/4.1.Act2.tex | tools/format_activities_tex.rb > _includes/activities/4.1.Act2.md
-	pandoc -f latex -t markdown  _includes/activities/4.1.Act2.md -o _includes/activities/4.1.Act2.md 	
+	pandoc --template _layouts/activities.md -f latex -t markdown  _includes/activities/4.1.Act2.md -o _includes/activities/4.1.Act2.md 	
 	cat book/activities/4.1.Act3.tex | tools/format_activities_tex.rb > _includes/activities/4.1.Act3.md		
-	pandoc -f latex -t markdown  _includes/activities/4.1.Act3.md -o _includes/activities/4.1.Act3.md 	
+	pandoc --template _layouts/activities.md -f latex -t markdown  _includes/activities/4.1.Act3.md -o _includes/activities/4.1.Act3.md 	
 
 format_previews:
 	cat book/previews/4.1.PA1.tex | tools/format_previews_tex.rb > _includes/previews/4.1.PA1.md
-	pandoc -f latex -t markdown  _includes/previews/4.1.PA1.md -o _includes/previews/4.1.PA1.md 		
+	pandoc --template _layouts/previews.md -f latex -t markdown  _includes/previews/4.1.PA1.md -o _includes/previews/4.1.PA1.md 		
 
 format_exercises: 
 	cat book/exercises/4.1.VelocityDistanceEx.tex | tools/format_exercises_tex.rb > _includes/exercises/4.1.VelocityDistanceEx.md
-	pandoc -f latex -t markdown  _includes/exercises/4.1.VelocityDistanceEx.md -o _includes/exercises/4.1.VelocityDistanceEx.md
+	pandoc --template _layouts/exercises.md -f latex -t markdown  _includes/exercises/4.1.VelocityDistanceEx.md -o _includes/exercises/4.1.VelocityDistanceEx.md
 
 
 
