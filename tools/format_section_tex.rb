@@ -40,6 +40,13 @@ ARGF.each do |line|
     line.gsub!( line["\$\$"], "\n\n\$\$\n\n")
   end  
 
+  if line =~ /\\begin\{summary\}/
+    line.gsub!(line, "\\{\\% include summary-top.md \\%\\}\n\\begin\{itemize\}\n")
+  end
+  if line =~ /\\end\{summary\}/
+    line.gsub!(line, "\\end\{itemize\}\n\\{\\% include summary-bot.md \\%\\}")
+  end
+
   puts line
 end
 
