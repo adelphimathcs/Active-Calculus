@@ -1,8 +1,8 @@
 #!/usr/bin/env ruby
 
 # print all the lines in every file passed via command line that contains login
-sep_count = 0
 ARGF.each do |line|
+  next if line.start_with? '%'
 
   # includes input files
   if line =~ /\\input\{(.*)\}/
@@ -36,9 +36,10 @@ ARGF.each do |line|
   	line.gsub!(line["\\ea"], "\\end{enumerate}" )
   end     
 
-#  if line["\\item"]
-#    line.gsub!( line["\\item"], "* ")
-#  end  
+  if line["\$\$"]
+    line.gsub!( line["\$\$"], "\n\n\$\$\n\n")
+  end  
+
 
   puts line
 end

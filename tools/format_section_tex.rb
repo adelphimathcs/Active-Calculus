@@ -5,20 +5,15 @@
 ARGF.each do |line|
   next if line.start_with? '%' # I want to skip commented lines
 
+  # modifies input file for exercises
   if line =~ /\\input\{exercises\/(.*)\(Ex\)\}/
     line.gsub!(line, "\\{\\% include exercises\/" + $1 + "Ex.md \\%\\}" )
   end
 
   # includes input files
   if line =~ /\\input\{(.*)\}/
-#    text = File.read("book/"+$1+ ".tex")
     line.gsub!(line, "\\{\\% include " + $1 + ".md \\%\\}" )
   end
-
-#  if line =~ /\\input\{(.*)\}/
-#    text = File.read("book/"+$1+ ".tex")
-#    line.gsub!(line, text )
-#  end  
 
   # Creates Motivating Question environment
   if line =~ /\\framebox\{\\hspace\*\{3 pt\}/ 
@@ -41,9 +36,9 @@ ARGF.each do |line|
   	line.gsub!(line["\\ea"], "\\end{enumerate}" )
   end     
 
-#  if line["\\item"]
-#    line.gsub!( line["\\item"], "* ")
-#  end  
+  if line["\$\$"]
+    line.gsub!( line["\$\$"], "\n\n\$\$\n\n")
+  end  
 
   puts line
 end

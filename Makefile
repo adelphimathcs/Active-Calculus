@@ -46,7 +46,6 @@ clean:
 format_section: 
 	cat book/4.1.VelocityDistance.tex | tools/format_section_tex.rb > _posts/2013-08-01-4.1.VelocityDistance.md
 	pandoc --template _layouts/sections.md -f latex -t markdown  _posts/2013-08-01-4.1.VelocityDistance.md -o _posts/2013-08-01-4.1.VelocityDistance.md
-#	cat _posts/2013-08-01-1.1.Velocity.md | tools/add_section_header.rb > _posts/2013-08-01-1.1.Velocity.md	
 
 format_activities:
 	cat book/activities/4.1.Act1.tex | tools/format_activities_tex.rb > _includes/activities/4.1.Act1.md
