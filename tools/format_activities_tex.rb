@@ -42,6 +42,13 @@ ARGF.each do |line|
     line.gsub!( line["\$\$"], "\n\n\$\$\n\n")
   end  
 
+  # filter for images
+  if line =~ /\\centerline\{.*\}/
+    line.gsub!(line, " ")
+  end
+  if line =~ /\\scalebox\{.*\}\{(.*)\}/
+    line.gsub!(line, $1)
+  end
 
   puts line
 end
