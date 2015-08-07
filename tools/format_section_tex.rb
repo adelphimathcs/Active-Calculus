@@ -1,9 +1,13 @@
 #!/usr/bin/env ruby
 
 # print all the lines in every file passed via command line that contains login
-sep_count = 0
+
 ARGF.each do |line|
-#  next if line =~ /\%/ # I want to skip commented lines
+  next if line.start_with? '%' # I want to skip commented lines
+
+  if line =~ /\\input\{exercises\/(.*)\(Ex\)\}/
+    line.gsub!(line, "\\{\\% include exercises\/" + $1 + "Ex.md \\%\\}" )
+  end
 
   # includes input files
   if line =~ /\\input\{(.*)\}/
