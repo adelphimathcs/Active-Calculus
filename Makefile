@@ -44,10 +44,26 @@ clean:
 	rm -rf $(TEMP_DIR)
 
 format_section: 
-	cat book/4.1.VelocityDistance.tex | tools/format_section_tex.rb > _posts/2013-08-01-4.1.VelocityDistance.md
-	pandoc --template _layouts/sections.md -f latex -t markdown  _posts/2013-08-01-4.1.VelocityDistance.md -o _posts/2013-08-01-4.1.VelocityDistance.md
+	cat book/4.1.VelocityDistance.tex | tools/format_section_tex.rb > pre-image-filter/posts/4.1.VelocityDistance.md
+	pandoc --template _layouts/sections.md -f latex -t markdown  pre-image-filter/posts/4.1.VelocityDistance.md -o pre-image-filter/posts/4.1.VelocityDistance.md
 
 format_activities:
+	cat book/activities/4.1.Act1.tex | tools/format_activities_tex.rb > pre-image-filter/activities/4.1.Act1.md
+	pandoc --template _layouts/activities.md -f latex -t markdown  pre-image-filter/activities/4.1.Act1.md -o pre-image-filter/activities/4.1.Act1.md 
+	cat book/activities/4.1.Act2.tex | tools/format_activities_tex.rb > pre-image-filter/activities/4.1.Act2.md
+	pandoc --template _layouts/activities.md -f latex -t markdown  pre-image-filter/activities/4.1.Act2.md -o pre-image-filter/activities/4.1.Act2.md 	
+	cat book/activities/4.1.Act3.tex | tools/format_activities_tex.rb > pre-image-filter/activities/4.1.Act3.md		
+	pandoc --template _layouts/activities.md -f latex -t markdown  pre-image-filter/activities/4.1.Act3.md -o pre-image-filter/activities/4.1.Act3.md 	
+
+format_previews:
+	cat book/previews/4.1.PA1.tex | tools/format_previews_tex.rb > pre-image-filter/previews/4.1.PA1.md
+	pandoc --template _layouts/previews.md -f latex -t markdown  pre-image-filter/previews/4.1.PA1.md -o pre-image-filter/previews/4.1.PA1.md 		
+
+format_exercises: 
+	cat book/exercises/4.1.VelocityDistanceEx.tex | tools/format_exercises_tex.rb > pre-image-filter/exercises/4.1.VelocityDistanceEx.md
+	pandoc --template _layouts/exercises.md -f latex -t markdown  pre-image-filter/exercises/4.1.VelocityDistanceEx.md -o pre-image-filter/exercises/4.1.VelocityDistanceEx.md	
+
+format_activities_old:
 	cat book/activities/4.1.Act1.tex | tools/format_activities_tex.rb > _includes/activities/4.1.Act1.md
 	pandoc --template _layouts/activities.md -f latex -t markdown  _includes/activities/4.1.Act1.md -o _includes/activities/4.1.Act1.md 
 	cat book/activities/4.1.Act2.tex | tools/format_activities_tex.rb > _includes/activities/4.1.Act2.md
@@ -55,11 +71,12 @@ format_activities:
 	cat book/activities/4.1.Act3.tex | tools/format_activities_tex.rb > _includes/activities/4.1.Act3.md		
 	pandoc --template _layouts/activities.md -f latex -t markdown  _includes/activities/4.1.Act3.md -o _includes/activities/4.1.Act3.md 	
 
-format_previews:
+
+format_previews_old:
 	cat book/previews/4.1.PA1.tex | tools/format_previews_tex.rb > _includes/previews/4.1.PA1.md
 	pandoc --template _layouts/previews.md -f latex -t markdown  _includes/previews/4.1.PA1.md -o _includes/previews/4.1.PA1.md 		
 
-format_exercises: 
+format_exercises_old: 
 	cat book/exercises/4.1.VelocityDistanceEx.tex | tools/format_exercises_tex.rb > _includes/exercises/4.1.VelocityDistanceEx.md
 	pandoc --template _layouts/exercises.md -f latex -t markdown  _includes/exercises/4.1.VelocityDistanceEx.md -o _includes/exercises/4.1.VelocityDistanceEx.md
 
