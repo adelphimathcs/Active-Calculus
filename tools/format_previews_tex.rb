@@ -4,6 +4,10 @@
 ARGF.each do |line|
   next if line.start_with? '%'
 
+  if line =~ /(\\begin\{pa\} \\label\{.*\})/
+    line.gsub!(line,  $1 + "\n\n" )
+  end
+
   # includes input files
   if line =~ /\\input\{(.*)\}/
 #    text = File.read("book/"+$1+ ".tex")

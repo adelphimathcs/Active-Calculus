@@ -1,3 +1,1 @@
-### Activities
-
-$body$
+### Activities $body$
