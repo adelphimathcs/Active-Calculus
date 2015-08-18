@@ -1,3 +1,1 @@
-### Preview Activity
-
-$body$
+### Preview Activity $body$

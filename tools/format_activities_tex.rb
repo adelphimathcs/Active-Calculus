@@ -6,6 +6,10 @@ ARGF.each do |line|
 
   break if line =~ /\\begin\{smallhint}/
 
+  if line =~ /\\begin\{activity\}.*\\label\{(.*)\}\ (.*)/
+    line.gsub!(line,   "\\begin\{activity\}\ \\label\{" + $1 + "\}" + "\n\n" + $2 )
+  end
+
   # includes input files
   if line =~ /\\input\{(.*)\}/
 #    text = File.read("book/"+$1+ ".tex")

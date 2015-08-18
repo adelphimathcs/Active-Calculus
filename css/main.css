@@ -123,7 +123,8 @@ body {
 }
 
 .entry_content {
-  max-width: 960px;
+  max-width: 65%;
+  /* 960px; */
   margin: 0 auto;
   margin-bottom: 30px;
   padding: 10px;
