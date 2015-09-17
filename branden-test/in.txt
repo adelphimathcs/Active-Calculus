@@ -1,1 +1,1 @@
-[Para [Image [Str "At",Space,Str "left,",Space,Str "a",Space,Str "constant",Space,Str "velocity",Space,Str "function;",Space,Str "at",Space,Str "right,",Space,Str "a",Space,Str "non-constant",Space,Str "velocity",Space,Str "function."] ("figures/4_1_VelArea.png","fig:")]]
+here is a change [Para [Image [Str "At",Space,Str "left,",Space,Str "a",Space,Str "constant",Space,Str "velocity",Space,Str "function;",Space,Str "at",Space,Str "right,",Space,Str "a",Space,Str "non-constant",Space,Str "velocity",Space,Str "function."] ("figures/4_1_VelArea.png","fig:")]]
